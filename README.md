@@ -1,35 +1,35 @@
 # Computer-Vision-Surgical-Applications
 
 
-# 🧠 Surgical Instrument Detection with Semi-Supervised Learning
+## Surgical Instrument Detection with Semi-Supervised Learning
 
 This repository contains code and results from our HW1 project on semi-supervised object detection for surgical videos. We use YOLOv8 to detect instruments in leg suturing procedures under both in-distribution (ID) and out-of-distribution (OOD) settings.
 
 ---
 
-## 📌 Project Overview
+### 📌 Project Overview
 
 In this project, we tackled the challenge of object detection in a low-resource medical domain using a small set of labeled images and unlabeled surgical videos. By leveraging pseudo-labeling and strong data augmentations, we trained a YOLOv8 model capable of robustly detecting surgical tools such as Tweezers and Needle Drivers. Our pipeline demonstrates the effectiveness of combining real and synthetic labels in semi-supervised learning settings.
 
 ---
 
-## 🛠️ Setup Instructions
+### 🛠️ Setup Instructions
 
-### 1. Clone the repository
+#### 1. Clone the repository
 
 ```bash
 git clone https://github.com/GilYash/surgical-instrument-detection.git
 cd surgical-instrument-detection
 ```
 
-### 2. Create and activate a virtual environment
+#### 2. Create and activate a virtual environment
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+#### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## 🧪 Running Inference
 
-### 🔍 Predict on a single image
+#### 🔍 Predict on a single image
 
 ```bash
 python predict.py
@@ -51,7 +51,7 @@ python predict.py
 - Runs prediction using the YOLOv8 model
 - Saves annotated output image with bounding boxes
 
-### 🎬 Predict on an entire video
+#### 🎬 Predict on an entire video
 
 ```bash
 python video.py
@@ -63,7 +63,7 @@ python video.py
 
 ---
 
-## 📦 Files Included
+### 📦 Files Included
 
 - `predict.py` — Predict and visualize on one image
 - `video.py` — Annotate full video
@@ -73,26 +73,26 @@ python video.py
 
 ---
 
-## 📥 Final Model Weights
+### 📥 Final Model Weights
 
 Download the final trained model weights:  
 📦 **[weights.pt](weights.pt)**
 
 ---
 
-## 🎥 OOD Video Demo
+### 🎥 OOD Video Demo
 
 Watch the predictions from our model on the OOD surgical video:  
 🎬 **[Demo Video (Google Drive)](https://drive.google.com/file/d/19sJoSm_KpbdMjYa0CrBvwYHXBQmuBhe6/view?usp=sharing)**
 
 ---
 
-## 👥 Collaborators
+### 👥 Collaborators
 
 - **Yarden** – [@yarden077](https://github.com/yarden077)
 
 ---
 
-## 📚 Acknowledgments
+### 📚 Acknowledgments
 
 Thanks to the Ultralytics team for YOLOv8 and to the course staff for guidance and feedback throughout the project.
